@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
+        
+        
+        <title>Real Indian Fast Food Dishes</title>
+        <style>
+            
+            .header{
+                width: 100%;
+            }
+            body{
+                margin: 0;
+                height: 100%;
+                min-height:100%;
+                background-color:#232323;
+                font-family: helvetica, sans-serif;
+                padding: 0;
+            }
+            .container{
+                min-height: 100%;
+                position: relative;
+                
+            }
+            h1{
+                font-family: 'Londrina Shadow', cursive;
+                text-align: center;
+                color: #aaaaaa;
+                font-size: 65px;
+                margin: 60px 0 0 0;
+                
+            }
+            h3{
+                text-align: center;
+                color: #bbbbbb;
+                margin: 0 0 70px 0;
+            }
+            h2{
+                font-family: 'Londrina Shadow', cursive;
+                font-size: 65px;
+                color: #aaaaaa;
+                margin: 60px 0 0 0;
+            }
+            p{
+                font-size: 25px;
+                color:#bbbbbb;
+            }
+            p.clear{
+                clear: both;
+            }
+            
+            .nav-link:hover nav-link:focus{
+                color: #D9534F;
+                
+            }
+            .active{
+                color: #D9534F;
+                border-bottom: 5px solid #D9534F;
+                
+            }
+            .rates{
+                float: right;
+            }
+            
+            /* Style the tab */
+            div.tab {
+                float: left;
+                border: 1px solid #ccc;
+                background-color: #D9534F;
+                width: 30%;
+                height: 470px;
+            }
+
+            /* Style the buttons inside the tab */
+            div.tab button {
+                display: block;
+                background-color: inherit;
+                color: black;
+                padding: 22px 16px;
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align: left;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            /* Change background color of buttons on hover */
+            div.tab button:hover {
+                background-color: #ddd;
+            }
+
+            /* Create an active/current "tab button" class */
+            div.tab button.active {
+                background-color: #ccc;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+                float: left;
+                padding: 0px 12px;
+                display: none;
+                width: 70%;
+                border-left: none;
+                height: 500px ;
+            }
+            .imagecircle{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 2px solid white;
+                
+                position: inherit;
+                
+            }
+            .img-circle{
+                border-radius: 50%;
+                border: 2px solid white;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                margin-left: 10px;
+        
+                
+            }
+            .otherimages{
+                margin-bottom: 30px;
+            }
+            
+            #footer{
+                position: absolute;
+                bottom: 0; 
+                left:0;
+                right:0;
+                margin-top: 120px;
+                padding-top: 20px;
+				padding-bottom: 40px;
+                text-align: center;
+                width: 100%;
+                height: 20px;
+                background-color: azure;
+            }
+        
+            
+        
+        
+        </style>
+    
+    
+    </head>
+    
+    <body>
+        
+        <div class="header"> 
+    
+        
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../Fastfood.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="orderformsubmission.php">Order Delivery</a>
+      </li>
+    </ul>
+    <form  action ="feedback.php" class="form-inline my-2 my-lg-0">
+      
+      <button class="btn btn-danger my-2 my-sm-0" type="submit" id="feedback">Feedback</button>
+    </form>
+  </div>
+</nav>
+        </div> 
+        <div class="container">
+        
+        <h1>Vichenna's Fast Food</h1>
+        <h3>One stop for all desi menus</h3>
+            
+        <h2>Menu</h2>
+        <hr style="border-color:white">
+        <p>Your wait for the real Indian Fast Food is over!</p>
+        <br>
+        
+            <div class="tab">
+                <button class="tablinks" onclick="openMenu(event, 'Chatpata Chaats')"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Chatpata Chaats</button>
+              <button class="tablinks" onclick="openMenu(event, 'Hot Fried Specials')"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Hot Fried Specials</button>
+              <button class="tablinks" onclick="openMenu(event, 'Pav Bhaji')"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Pav Bhaji</button>
+              <button class="tablinks" onclick="openMenu(event, 'Indian Sandwiches')"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Indian Sandwiches</button>
+                <button class="tablinks" onclick="openMenu(event, 'Indian Style Pizza')"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Indian Style Pizza</button>
+                <button class="tablinks" onclick="openMenu(event, 'South Indian Dishes')"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> South Indian Dishes</button>
+                <button class="tablinks" onclick="openMenu(event, 'Sweets & Beverages')"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Sweets & Beverages</button>
+                
+            </div>
+            
+            
+            <div id="Chatpata Chaats" class="tabcontent">
+                <h3>Chatpata Chaats</h3>
+                <p>Hot Chaats</p>
+                <p><small>Masala Puri <img src="https://maxcdn.icons8.com/Color/PNG/24/Cultures/chili_pepper-24.png" title="Chilli Pepper" width="24"><span class="rates">$5</span></small> </p>
+                <p><small>Samosa <span class="rates">$4</span></small> </p>
+                <p><small>Samosa Masala <img src="https://maxcdn.icons8.com/Color/PNG/24/Cultures/chili_pepper-24.png" title="Chilli Pepper" width="24"><span class="rates">$5</span> </small></p>
+                <p><small>Ragda Patties <span class="rates">$4</span></small> </p>
+                <p><small>Kachori Masala <span class="rates">$5</span></small> </p>
+                <p><small>Chole Batura <span class="rates">$5</span> </small></p>
+                <p><small>Cutlet Masala<span class="rates">$5</span> </small></p>
+                
+                <br>
+                <p>Cold Chaats</p>
+                <p><small>Vada Pav <span class="rates">$5</span></small> </p>
+                <p><small>Bhel Puri <span class="rates">$4</span></small> </p>
+                <p><small>Dahi Puri <span class="rates">$5</span> </small></p>
+                <p><small>Sev Puri <span class="rates">$5</span> </small></p>
+                <p><small>Pani Puri <span class="rates">$5</span></small> </p>
+                <p><small>Dahi Kachori <span class="rates">$5</span></small> </p>
+                <br><br>
+                <img src="../images/bature.jpg" class="img-circle" title="Chole Bature">
+                <img src="../images/patties.jpg" class="img-circle" title="Ragda Patties">
+                <img src="../images/samosa.jpg" class="img-circle" title="Samosa">
+            </div>
+
+            <div id="Hot Fried Specials" class="tabcontent">
+              <h3>Hot Fried Specials</h3>
+                <p><small>Mirchi Bajji <img src="https://maxcdn.icons8.com/Color/PNG/24/Cultures/chili_pepper-24.png" title="Chilli Pepper" width="24"><span class="rates">&cent;0.50</span> </small></p>
+              <p><small>Capsicum Bajji<span class="rates">$1.50</span> </small></p>
+                <p><small>Capsicum Masala <img src="https://maxcdn.icons8.com/Color/PNG/24/Cultures/chili_pepper-24.png" title="Chilli Pepper" width="24"> <span class="rates">$2.50</span> </small></p>
+                <p><small>Gobi Manchurian <img src="https://maxcdn.icons8.com/Color/PNG/24/Cultures/chili_pepper-24.png" title="Chilli Pepper" width="24"> <span class="rates">$4.50</span> </small></p>
+                <p><small>Kottu Parotta (TamilNadu Special) <img src="https://maxcdn.icons8.com/Color/PNG/24/Cultures/chili_pepper-24.png" title="Chilli Pepper" width="24"> <span class="rates">$4.50</span> </small></p>
+                <p><small>Aloo Bonda<span class="rates">$1.50</span> </small></p>
+                <p><small>Urad dal vada<span class="rates">$2.50</span> </small></p>
+                <p><small>Masala vada<span class="rates">$2.00</span> </small></p>
+                <p><small>Onion Pakoda<span class="rates">$2.00</span> </small></p>
+                <br><br>
+                <img src="../images/uraddalvada.jpg" class="img-circle" title="Urad Dal Vada">
+                <img src="../images/pakoda.jpg" class="img-circle" title="Onion Pakoda">
+                <img src="../images/parotta.jpg" class="img-circle" title="Kottu Parotta">
+            </div>
+            
+            <div id="Pav Bhaji" class="tabcontent">
+                <h3>Pav Bhaji</h3>
+                
+                <p><small>Butter Pav Bhaji<span class="rates">$4.0</span></small> </p> 
+                <p><small>Special Pav Bhaji(comes with raisins and cashews)<span class="rates">$5.0</span></small> </p> 
+                <p><small>Add cheese and paneer<span class="rates">$1.5</span></small> </p> 
+                <br>
+                <img src="../images/bigpavbhaji.jpg" class="otherimages" title="Pav Bhaji">
+                
+            </div>
+
+            <div id="Indian Sandwiches" class="tabcontent">
+                <h3>Indian Sandwiches</h3>
+                <p>GRILLED OR TOASTED</p>
+                <p>OPEN TOAST</p>
+                <p><small>Chilli Cheese Toast <img src="https://maxcdn.icons8.com/Color/PNG/24/Cultures/chili_pepper-24.png" title="Chilli Pepper" width="24"><span class="rates">$4.0</span></small> </p>
+                <p><small>Schezwan Chilli Cheese Toast <img src="https://maxcdn.icons8.com/Color/PNG/24/Cultures/chili_pepper-24.png" title="Chilli Pepper" width="24"><span class="rates">$4.0</span></small> </p>
+                <br>
+                <p>DOUBLE DECKER GRILLED </p>
+                <p><small>Vegetable Cheese Grilled<span class="rates">$5.0</span></small> </p>
+                <p><small>Club Grilled<span class="rates">$5.0</span></small> </p>
+                <p>TRIPLE DECKER GRILLED </p>
+                <p><small>Vegetable Cheese Grilled<span class="rates">$6.0</span></small> </p>
+                <p><small>Club Grilled<span class="rates">$6.0</span></small> </p>
+                <br><br>
+                <img src="../images/chillicheese.jpg" class="img-circle" title="Chilli Cheese Toast">
+                <img src="../images/grilledsandwich.jpg" class="img-circle" title="Grilled Sandwich">
+                <img src="../images/clubsandwich.jpg" class="img-circle" title="Club Sandwich">
+            </div>
+
+            <div id="Indian Style Pizza" class="tabcontent">
+              <h3>Indian Style Pizza</h3>
+              <p><small>Cheese Pizza<span class="rates">$6.0</span></small> </p>
+                <p><small>Vegetable Cheese Pizza<span class="rates">$6.0</span></small> </p>
+                <p><small>Spicy Vegetable Pizza <img src="https://maxcdn.icons8.com/Color/PNG/24/Cultures/chili_pepper-24.png" title="Chilli Pepper" width="24"> <span class="rates">$7.0</span></small> </p>
+                <p><small>Vegetable Paneer Pizza<span class="rates">$7.0</span></small> </p>
+                
+                <img src="../images/bigpizza.jpg" class="otherimages" title="Indian Style Pizza">
+            </div>
+
+            <div id="South Indian Dishes" class="tabcontent">
+              <h3>South Indian Dishes</h3>
+              <p><small>Iyengar's Puliogare<span class="rates">$6.0</span></small></p>
+                <p><small>Urad Dal Ogare/Urad Dal Rice<span class="rates">$6.0</span></small></p>
+                <p><small>Masala Dosa<span class="rates">$7.0</span></small></p>
+                <p><small>Mango Tokku Rice/Mango Chutney Rice <img src="https://maxcdn.icons8.com/Color/PNG/24/Cultures/chili_pepper-24.png" title="Chilli Pepper" width="24"><span class="rates">$6.0</span></small>  </p>
+                <br>
+                <img src="../images/uradogare.jpg" class="img-circle" title="Urad dal ogare">
+                <img src="../images/masaladosa.jpg" class="img-circle" title="Masala Dosa">
+            </div>
+            
+            <div id="Sweets & Beverages" class="tabcontent">
+              <h3>Sweets & Beverages</h3>
+                <p><small>Ragi Halbhai<span class="rates">$1.0</span></small></p>
+                <p><small>Lonovala Chikki<span class="rates">$2.0</span></small></p>
+                <p><small>7 cups Burfi<span class="rates">$2.0</span></small></p>
+                <p><small>Milk Burfi<span class="rates">$2.0</span></small></p>
+                <br>
+                <p>Beverages</p>
+                <p><small>Masala Darjeeling Chai/Tea<span class="rates">$2.0</span></small></p>
+                <p><small>Masala Darjeeling Chai/Tea<span class="rates">$2.0</span></small></p>
+                <br>
+                <img src="../images/milkburfi.jpg" class="img-circle" title="Milk Burfi">
+                <img src="../images/7cupburfi.jpg" class="img-circle" title="7 cup Burfi">
+                
+            </div>    
+            
+        
+        
+        
+        
+        <div id="footer">&copy; Vidya weblinks ltd.</div>
+        
+        </div>
+         
+        
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/05a181ad12.js"></script>
+    <script>
+        
+
+         $(document).ready(function(){
+            $('.nav-link').click(function(){
+                $('.nav-link').removeClass("active");
+                $(this).addClass("active");
+            });
+             $('.tab button:first-child').addClass('active');
+             
+          });
+        function setNavigation() {
+            var path = window.location.pathname;
+            path = path.replace(/\/$/, "");
+            path = decodeURIComponent(path);
+
+            $(".nav a").each(function () {
+                var href = $(this).attr('href');
+                if (path.substring(0, href.length) === href) {
+                    $(this).addClass('active');
+                }
+            });
+        }
+        
+        function openMenu(evt, menuName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        </script>
+        
+    </body>
+    
+</html>
